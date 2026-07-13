@@ -1,18 +1,4 @@
-//console.log("Rahul")    
+const balance = new Number(100);
 
-let x = 5;
-
-//console.log(x++);
-//console.log(x);
-//console.log(++x);
-//let a = 5;
-
-//let b = a++ + ++a;
-
-
-let a = 10;
-
-let b = ++a + ++a;
-
-console.log(a);
-console.log(b);
+console.log(balance);
+console.log((23.8966).toFixed(2));
