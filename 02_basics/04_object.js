@@ -279,3 +279,223 @@ console.log(user.hasOwnProperty("age"));
 // false -> Property does not exist
 
 
+
+
+
+// ===========================
+// Object Destructuring=Object se kisi property ko nikaal kar ek alag variable bana lena.
+// ===========================
+
+const course = {
+
+    courseName: "JavaScript",
+
+    price: 999,
+
+    courseInstructor: "Hitesh"
+};
+
+// Without Destructuring
+
+console.log(course.courseInstructor);
+
+// --------------------------------
+
+// Destructuring
+
+const { courseInstructor } = course;
+
+console.log(courseInstructor);
+
+// --------------------------------
+
+// Alias=naam ko aur chota kr dena 
+
+const { courseInstructor: instructor } = course;
+
+console.log(instructor);
+
+
+
+
+
+// ============================================================
+// API (Application Programming Interface)
+// ============================================================
+
+/*Simple Meaning
+
+// API ek medium (Messenger) hai jo Client aur Server ke beech communication karwati hai*/
+
+
+// Flow
+
+/*
+
+Client
+
+↓
+
+Request
+
+↓
+
+API
+
+↓
+
+Server
+
+↓
+
+Response
+
+↓
+
+Client
+
+*/
+/* User ko sirf Response chahiye. Backend me kya process hua  uski tension lene ki zarurat nahi.*/
+
+// ============================================================
+// RESTAURANT EXAMPLE
+// ============================================================
+
+/*
+
+Customer
+
+↓
+
+Waiter
+
+↓
+
+Kitchen
+
+↓
+
+Food
+
+↓
+
+Customer
+
+*/
+
+/*
+// Waiter = API
+ Customer directly kitchen me nahi jata. Waiter order lekar kitchen me jata hai.
+Kitchen food banati hai.Waiter food customer tak lekar aata hai.Customer ko sirf final food milta hai.
+ Exactly isi tarah API kaam karti hai.
+*/
+
+// ============================================================
+// JSON
+// ============================================================
+
+// JSON Full Form=JavaScript Object Notation
+
+/*JSON ka use= Client aur Server ke beech data transfer karne ke liye.
+
+
+// Basic JSON Example
+
+{
+
+    "name": "Hitesh",
+
+    "courseName": "JavaScript",
+
+    "price": "999"
+
+}
+
+
+// Notice
+
+// ✔ Keys double quotes ("") me hoti hain.
+
+// ✔ Data key-value pair ke form me hota hai.
+
+
+// ============================================================
+// WHY JSON ?
+// ============================================================
+
+/* Jab API response bhejti hai,to data mostly JSON format me hota hai.
+
+ JavaScript us data ko read karke use karti hai.*/
+
+ 
+// API Response & JSON Formatter
+// =====================================================
+
+// API response can be
+
+// 1. Object
+
+{
+
+    "id":1,
+
+    "name":"Rohit"
+
+}
+
+
+// OR
+
+// 2. Array of Objects
+
+[
+
+    {
+
+        "id":1,
+
+        "name":"Rohit"
+
+    },
+
+    {
+
+        "id":2,
+
+        "name":"Aman"
+
+    }
+
+];
+
+
+/* ================================================
+// Access Rule
+// ================================================
+
+// Array
+
+↓
+
+Index
+
+↓
+
+Object
+
+↓
+
+Property
+
+// Example
+
+users[0].name; */
+
+
+// ================================================
+// JSON Formatter
+
+//Large JSON responses are difficult to read. JSON Formatter converts them into a clean Tree Structure.
+
+
+
