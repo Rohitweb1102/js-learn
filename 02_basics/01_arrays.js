@@ -60,11 +60,7 @@ console.log(myArr);//output=[0,1,2,3,4,5,6]as it is as before
 const myN2=myArr.splice(1,4);
 console.log(myN2);//output=[1,2,3,4,] 4th index bhi include hai 
 //now surprise is that ki splice k andar humne jo bhi index daale hai ye un index ko orignal array se remove kr deta hai
-console.log(myArr);//output=[0,5,6]orignal array is changed
-
-
-
-
+console.log(myArr);//output=[0,5,6]orignal array is changed 
 
  
 
