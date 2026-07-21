@@ -1,13 +1,20 @@
-const mySym = Symbol("id");
-const mysym2= Symbol("election sign")
-
 const user = {
 
-    name: "Rohit",
+    username: "Hitesh",
 
-    [mySym]: "123",
-    [mysym2]:"lotus"
-};
-console.log(user[mySym]);
-console.log(user[mysym2]);
+    price: 199
 
+}
+function handleObject(anyObject) {
+
+    console.log(anyObject.username);//yha hum  console.log(user.username); bhi likh skte hai valid hai
+
+}
+
+handleObject({
+
+    username: "Sam",
+
+    price: 399
+
+});
